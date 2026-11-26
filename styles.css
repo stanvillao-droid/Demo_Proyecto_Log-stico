@@ -1,0 +1,62 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tema principal rojo escarlata */
+:root {
+  --fenix-red: #990000;
+  --fenix-red-light: #c00000;
+}
+
+.theme-red { background-color: var(--fenix-red) !important; color: white !important; }
+.theme-red-btn { background-color: var(--fenix-red) !important; color: white !important; border: none; }
+.theme-red-btn:hover { background-color: var(--fenix-red-light) !important; color: white !important; }
+
+.navbar-logistic { background-color: var(--fenix-red) !important; }
+.navbar-logistic .nav-link,
+.navbar-logistic .navbar-brand { color: white !important; }
+.navbar-logistic .nav-link.active { font-weight: bold; text-decoration: underline; }
+
+/* Inicio de sesión */
+.login-bg {
+  background: linear-gradient(135deg, #990000 0%, #550000 100%);
+}
+.tarjeta-login {
+  transition: all 0.3s ease;
+}
+.tarjeta-login:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+}
+
+/* Tarjetas del panel principal */
+.tarjeta-modulo {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, color 0.2s;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  height: 100%;
+}
+.tarjeta-modulo:hover {
+  transform: translateY(-5px);
+  color: var(--fenix-red);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+.tarjeta-modulo i { font-size: 2.5rem; margin-bottom: 12px; display: block; }
+
+/* Filas especiales */
+.fila-vencida { background-color: #f8d7da !important; }
+.fila-stock-bajo { background-color: #fff3cd !important; }
+
+/* Ventanas modales */
+.modal { z-index: 1050; }
+.modal-backdrop-custom { z-index: 1040; }
+
+/* Notificaciones emergentes */
+#toast-container .toast { min-width: 250px; }
